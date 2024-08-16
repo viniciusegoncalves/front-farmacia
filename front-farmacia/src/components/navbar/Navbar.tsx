@@ -3,24 +3,33 @@ import './Navbar.css';
 
 export function Navbar() {
   return (
-    <div className="flex gap-4 mb-4">
-      <ul className="flex gap-4 relative menu">
-        <Link to="/home">
-          <li className="text-lg font-medium cursor-pointer hover:text-zinc-500 hover:scale-110 transition-all">
+    <nav className="flex gap-6 mb-4">
+      <ul className="flex gap-6">
+        <li className="text-lg font-medium cursor-pointer">
+          <Link
+            to="/home"
+            className="text-green-900 hover:text-green-700 transition-colors duration-300 hover:underline"
+          >
             Home
-          </li>
-        </Link>
-        <Link to="/produtos">
-          <li className="text-lg font-medium cursor-pointer hover:text-zinc-500 hover:scale-110 transition-all">
+          </Link>
+        </li>
+        <li className="text-lg font-medium cursor-pointer">
+          <Link
+            to="/produtos"
+            className="text-green-900 hover:text-green-700 transition-colors duration-300 hover:underline"
+          >
             Produtos
-          </li>
-        </Link>
-        <Link to="/categorias">
-          <li className="text-lg font-medium cursor-pointer hover:text-zinc-500 hover:scale-110 transition-all">
+          </Link>
+        </li>
+        <li className="text-lg font-medium cursor-pointer">
+          <Link
+            to="/categorias"
+            className="text-green-900 hover:text-green-700 transition-colors duration-300 hover:underline"
+          >
             Categorias
-          </li>
-        </Link>
+          </Link>
+        </li>
       </ul>
-    </div>
+    </nav>
   );
 }
