@@ -8,17 +8,30 @@ import {
 function Footer() {
   return (
     <>
-      <div className="flex justify-center bg-indigo-900 text-white">
-        <div className="container flex flex-col items-center py-4">
-          <p className="text-xl font-bold">Pharma | Copyright: </p>
-          <p className="text-lg">Acesse nossas redes sociais</p>
-          <div className="flex gap-2">
-            <LinkedinLogo size={48} weight="bold" />
-            <InstagramLogo size={48} weight="bold" />
-            <FacebookLogo size={48} weight="bold" />
+      <footer className="absolute bottom-0 w-full">
+        <div className="flex justify-center text-gray-800 bg-green-50">
+          <div className="container flex flex-col items-center py-4">
+            <p className="text-lg font-semibold text-green-900">
+              Pharma | Todos os direitos reservados
+            </p>
+            <p className="text-sm text-gray-600">Siga-nos nas redes sociais</p>
+            <div className="flex gap-4 mt-2">
+              <LinkedinLogo
+                size={32}
+                className="text-green-600 hover:text-green-700"
+              />
+              <InstagramLogo
+                size={32}
+                className="text-green-600 hover:text-green-700"
+              />
+              <FacebookLogo
+                size={32}
+                className="text-green-600 hover:text-green-700"
+              />
+            </div>
           </div>
         </div>
-      </div>
+      </footer>
     </>
   );
 }
