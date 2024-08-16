@@ -6,26 +6,18 @@ export function Navbar() {
     <div className="flex gap-4 mb-4">
       <ul className="flex gap-4 relative menu">
         <Link to="/home">
-          <li
-            style={{}}
-            className="text-lg font-medium cursor-pointer hover:text-zinc-500 hover:scale-110 transition-all"
-          >
+          <li className="text-lg font-medium cursor-pointer hover:text-zinc-500 hover:scale-110 transition-all">
             Home
           </li>
         </Link>
-        <Link to="/home">
+        <Link to="/produtos">
           <li className="text-lg font-medium cursor-pointer hover:text-zinc-500 hover:scale-110 transition-all">
             Produtos
           </li>
         </Link>
-        <Link to="/home">
+        <Link to="/categorias">
           <li className="text-lg font-medium cursor-pointer hover:text-zinc-500 hover:scale-110 transition-all">
-            Sobre
-          </li>
-        </Link>
-        <Link to="/home">
-          <li className="text-lg font-medium cursor-pointer hover:text-zinc-500 hover:scale-110 transition-all">
-            Contato
+            Categorias
           </li>
         </Link>
       </ul>
